@@ -5,6 +5,10 @@ Simple single page site for css grid & flexbox demonstration.
 _Download source code:_
 <br>
 [Source code ZIP](https://github.com/studentTsi/WebCourse/archive/master.zip)
+<br>
+_Code repository:_
+<br>
+[Code](https://github.com/studentTsi/WebCourse)
 
 ## Useful links
 
