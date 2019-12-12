@@ -35,7 +35,7 @@ window.addEventListener("scroll", e => {
 });
 
 //Initial class calculation
-window.addEventListener("ready", e => {
+window.addEventListener("DOMContentLoaded", e => {
   runIntro();
   const currentViewArea = getCurrentViewArea(window.pageYOffset);
   addCurrentViewClass(currentViewArea);
