@@ -36,6 +36,7 @@ window.addEventListener("scroll", e => {
 
 //Initial class calculation
 window.addEventListener("load", e => {
+  runIntro();
   const currentViewArea = getCurrentViewArea(window.pageYOffset);
   addCurrentViewClass(currentViewArea);
 });
@@ -56,4 +57,17 @@ const callToAction = () => {
   const distanceTo = document.getElementById("about").getBoundingClientRect()
     .top;
   window.scrollBy({ top: distanceTo, left: 0, behavior: "smooth" });
+};
+
+const runIntro = () => {
+  const intro = document.getElementById("intro");
+  intro.setAttribute("style", "display: flex");
+  const timer = document.getElementById("timer");
+  let seconds = 5;
+  const counter = () => {
+    seconds--;
+    timer.innerText = seconds;
+  };
+  setInterval(counter, 1000);
+  setTimeout(() => intro.setAttribute("style", "display: none"), 5000);
 };
