@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Grid Example</title>
+  </head>
+  <body>
+    <div id="container">
+      <nav id="navigation">
+        <h1 id="capture">Winter</h1>
+        <ul id="nav-links">
+          <li class="nav-item" data-value="header">
+            <a href="#header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item" data-value="about">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item" data-value="portfolio">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item" data-value="blog">
+            <a href="#blog" class="nav-link">Blog</a>
+          </li>
+
+          <li class="nav-item" data-value="contact">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section id="header">
+        <div class="overlay">
+          <div class="header-capture">My winter page</div>
+          <div class="header-description">
+            <mark
+              style="font-size: 2rem; background: #ffffff; line-height: 3rem;"
+            >
+              Winter is the coldest time of the year. It is one of the four
+              seasons. Winter comes after autumn and before spring. Winter
+              begins the winter solstice. In the Northern Hemisphere the winter
+              solstice is usually December 21 or December 22. In the Southern
+              Hemisphere the winter solstice is usually June 21 or June 22. The
+              days are shorter and the nights are longer.
+            </mark>
+          </div>
+          <button class="header-button" onclick="callToAction()">More</button>
+        </div>
+      </section>
+      <section id="about" class="section-model">
+        <h3 class="section-capture">About me</h3>
+        <div class="about-content">
+          <div class="about-logo-content">
+            <figure class="about-avatar">
+              <img src="images/avatar.jpg" class="portfolio-img-ava" />
+            </figure>
+            <p class="about-avatar-description">Lady winter</p>
+          </div>
+          <div class="about-content-description">
+            <div class="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              voluptatem dolor neque beatae a tenetur odio fugit totam
+              doloremque deleniti! Adipisci consequuntur, nihil odio quaerat
+              dolorem sit ex eligendi qui.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-model" id="portfolio">
+        <h3 class="section-capture">Portfolio</h3>
+        <div class="portfolio-content">
+          <figure class=" portfolio-item1">
+            <img src="images/img_1.jpg" class="portfolio-img" />
+          </figure>
+          <figure class=" portfolio-item2">
+            <img src="images/img_2.jpg" class="portfolio-img" />
+          </figure>
+          <figure class=" portfolio-item3">
+            <img src="images/img_3.jpg" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-item4">
+            <img src="images/img_4.jpg" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-item5">
+            <img src="images/img_5.jpeg" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-item6">
+            <img src="images/img_6.jpg" class="portfolio-img" />
+          </figure>
+        </div>
+      </section>
+      <section class="section-model" id="blog">
+        <h3 class="section-capture">Blog</h3>
+        <div class="blog-content">
+          <div class="blog-card">
+            <figure class="blog-img">
+              <img src="images/img_1.jpg" class="portfolio-img border-radius" />
+            </figure>
+            <div class="blog-card-content">
+              <div class="blog-card-capture">Capture</div>
+              <div class="blog-card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                laboriosam suscipit sapiente ex quae, eum ab culpa minima
+                obcaecati quam atque enim doloremque ad consequatur ratione,
+                similique molestiae unde odit.
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <figure class="blog-img ">
+              <img src="images/img_2.jpg" class="portfolio-img border-radius" />
+            </figure>
+            <div class="blog-card-content">
+              <div class="blog-card-capture">Capture</div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                laboriosam suscipit sapiente ex quae, eum ab culpa minima
+                obcaecati quam atque enim doloremque ad consequatur ratione,
+                similique molestiae unde odit.
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <figure class="blog-img">
+              <img src="images/img_3.jpg" class="portfolio-img border-radius" />
+            </figure>
+            <div class="blog-card-content">
+              <div class="blog-card-capture">Capture</div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                laboriosam suscipit sapiente ex quae, eum ab culpa minima
+                obcaecati quam atque enim doloremque ad consequatur ratione,
+                similique molestiae unde odit.
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <figure class="blog-img">
+              <img src="images/img_4.jpg" class="portfolio-img border-radius" />
+            </figure>
+            <div class="blog-card-content">
+              <div class="blog-card-capture">Capture</div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                laboriosam suscipit sapiente ex quae, eum ab culpa minima
+                obcaecati quam atque enim doloremque ad consequatur ratione,
+                similique molestiae unde odit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-model" id="contact">
+        <h3 class="section-capture">Contact us</h3>
+        <div class="contact-section">
+          <div class="contact-input">
+            <input
+              type="text"
+              required
+              placeholder="your name"
+              class="inner-input"
+            />
+          </div>
+          <div class="contact-input">
+            <input
+              type="email"
+              required
+              placeholder="your email"
+              class="inner-input"
+            />
+          </div>
+          <div class="contact-input">
+            <textarea
+              aria-multiline="true"
+              type="text"
+              required
+              placeholder="your comments"
+              class="inner-input inner-input-comments"
+            ></textarea>
+          </div>
+        </div>
+        <button class="contact-button">Send</button>
+      </section>
+      <div class="not-responsive">
+        <h1>Alert!⚠️</h1>
+        <div>This page is not responsive, sorry for this 🔨</div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
